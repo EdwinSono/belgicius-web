@@ -15,8 +15,11 @@ function App({name}: AppProps) {
 
   return (
     <main>
+      <h1 className="text-3xl font-bold underline">
+        {name}!
+      </h1>
       <section className='new-arrivals'>
-        <h2>New arrivals, {name}!</h2>
+        <h2>New arrivals</h2>
         <div className='list'>
           {products.map((product) => (
             <ProductCard key={product.id} {...product} handleClick={() => handleClick(product)} />

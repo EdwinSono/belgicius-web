@@ -60,3 +60,5 @@ export default tseslint.config({
 - [Vite](https://vite.dev/guide/)
 - [React Guide](https://react.dev/learn)
 - [Repositorio](https://github.com/angelolev/curso-react-marzo)
+- [Tailwindcss](https://tailwindcss.com/docs/installation/using-vite)
+- [Vite config](https://vite.dev/config/)
