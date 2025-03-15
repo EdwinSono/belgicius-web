@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+# Belgicius App
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -53,19 +53,10 @@ export default tseslint.config({
 })
 ```
 
+# Resources
 
-# Diseño [Figma]
-https://www.figma.com/design/lf4Ht0gvQzUlCbbX0xnjDq/E-commerce-Website-Template-(Freebie)-(Community)?node-id=0-1
-
-# IDE online
-https://stackblitz.com/edit/vitejs-vite-r5zkgwkk?file=src%2FApp.jsx&terminal=dev
-
-
-# Vite
-https://vite.dev/guide/
-
-# React Guide
-https://react.dev/learn
-
-
-[Repositorio](https://github.com/angelolev/curso-react-marzo)
+- [Figma](https://www.figma.com/design/lf4Ht0gvQzUlCbbX0xnjDq/E-commerce-Website-Template-(Freebie)-(Community)?node-id=0-1)
+- [IDE online](https://stackblitz.com/edit/vitejs-vite-r5zkgwkk?file=src%2FApp.jsx&terminal=dev)
+- [Vite](https://vite.dev/guide/)
+- [React Guide](https://react.dev/learn)
+- [Repositorio](https://github.com/angelolev/curso-react-marzo)

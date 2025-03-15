@@ -3,5 +3,5 @@ import './index.css'
 import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
-  <App name="Sono"/>,
+  <App name="Belgicius App"/>,
 )

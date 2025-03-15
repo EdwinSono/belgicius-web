@@ -1,43 +1,29 @@
-import { useEffect, useState } from 'react'
 import './App.css'
-import Button from './Button'
+import { products, Product } from './services/products'
+import { ProductCard } from './components'
 
-function App({name}: {name: string}) {
-  const [contador, setContador] = useState<number>(0)
+interface AppProps {
+  name: string;
+}
 
-  useEffect(() => {
-    console.log('App.tsx')
-  }, [])
+function App({name}: AppProps) {
 
-  useEffect(() => {
-    console.log('actualizar componente')
-
-    return () => {
-      console.log('desmontado')
-    }
-  }, [contador])
-
-  const handleClick = () => {
-    console.log('Button.tsx')
-    alert(`Button ${name}`)
+  const handleClick = (product: Product) => {
+    console.log(`App.tsx ${product.name}`)
+    // alert(`Button ${product.name}`)
   }
 
   return (
-    <>
-      <h1>App web</h1>
-      <div className="card">
-        <p>
-          Hola <span role="img" aria-label="wave">👋</span> {name}
-        </p>
-        <p>{contador}</p>
-        <section>
-          <h1>Lista de botones</h1>
-          <Button label="Button" handleClick={handleClick}/>
-          <Button />
-          <button onClick={() => setContador(contador + 1)}>Incrementar</button>
-        </section>
-      </div>
-    </>
+    <main>
+      <section className='new-arrivals'>
+        <h2>New arrivals, {name}!</h2>
+        <div className='list'>
+          {products.map((product) => (
+            <ProductCard key={product.id} {...product} handleClick={() => handleClick(product)} />
+          ))}
+        </div>
+      </section>
+    </main>
   )
 }
 
