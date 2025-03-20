@@ -62,3 +62,6 @@ export default tseslint.config({
 - [Repositorio](https://github.com/angelolev/curso-react-marzo)
 - [Tailwindcss](https://tailwindcss.com/docs/installation/using-vite)
 - [Vite config](https://vite.dev/config/)
+- [Tienda api](https://fakestoreapi.com/)
+- [Fake api](https://fakeapi.platzi.com/)
+- [Google fonts](https://fonts.google.com/)
